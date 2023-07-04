@@ -102,7 +102,7 @@
 
 
             <div class="my-3">
-                <button class="btn-primary botao_cadastrar inputs">CADASTRAR</button>
+                <button class="btn-primary botao_cadastrar inputs" onclick="redirecionar()">CADASTRAR</button>
             </div>
         </div>
 
@@ -110,6 +110,12 @@
       </main>
 
       <footer class="footer"><img src="/src/footer.png" alt="Logo" class="logo-footer"></footer>
+      <script src="js/default.js"></script>
+      <script>
+        function redirecionar() {
+            window.location.href = `/cardapio.html`;
+        }
+    </script>
 </body>
-  <script src="js/default.js"></script>
+  
 </html>
