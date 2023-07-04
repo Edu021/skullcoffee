@@ -33,62 +33,124 @@
       </nav>
 
       <main>
-        <div class="container">
+
+
+          
           <div class="container">
+
             <div class="oval-title mt-5 mb-4 text-light position-relative top-0 start-50 translate-middle fs-4">
             Detalhes do Produto
             </div>
-            <div class="container">
-              <img src="" id="imagem" class="img-fluid rounded-start img imagem" alt="...">
+            
+            <div class="row container detalhes">
+
+              <div class="col" id="coluna1">
+                
+                <img src="" id="imagem" class="img-fluid rounded-start img imagem">
+                <h3 class="text-light my-3" id="titulo"> <!-- TITULO É COLOCADO PELO SCRIPT --> </h3>
+                <h5 class="text-light my-3">R$10,00</h5>
+                
+                <button id="adicionarNoCarrinho" class="my-1 botaoAdicionar text-light">
+                  <div class="addCart">
+                    <img src="./src/cart.png" class="carrinho">
+                    <p>Adicionar ao carrinho</p>
+                  </div>
+                </button>
+                <a class="botaoAdicionar my-1" href="cardapio.html">
+                  
+                  <div class="voltaraomenu">Voltar ao menu</div>
+                </a>
+              </div>
+              <div class="col text-light" id="coluna2">
+                <div class="" id="detalhes">
+                  <ul>
+                    <h1>Ingredientes:</h1>  
+                    <br>
+                    <li>
+                      exemplo
+                    </li>
+                    <li>
+                      exemplo
+                    </li>
+                    <li>
+                      exemplo
+                    </li>
+                    <li>
+                      exemplo
+                    </li>
+                    <br>
+                    <h4>Observação:</h4>
+                    <li>
+                      exemplo
+                    </li>
+                  </ul>
+    
+                </div>
+              </div>
             </div>
-            <div>
-              <h3 class="texto" id="titulo">Americano</h3>
-              <h5 class="valor">R$10,00</h5>
-            </div>
-            <button class="oval-titlee btnn" onclick="addItemToCart('cafeamericanoquente')">
-              <img src="./src/cart.png" class="carrovrum">
-              <p>Adicionar ao carrinho</p>
-            </button>
-            <a class="oval-titlee btnn BATATA" href="cardapio.html">
-              <p >Voltar ao menu</p>
-            </a>
-        </div>
-        <div class="">
-          <div class="detalhes">
-            <div class="oval-titleee" id="detalhes">
-              <ul>
-                <h4>Ingredientes:</h4>  
-                <br>
-                <li>
-                  exemplo
-                </li>
-                <li>
-                  exemplo
-                </li>
-                <li>
-                  exemplo
-                </li>
-                <li>
-                  exemplo
-                </li>
-                <br>
-                <h4>Observação:</h4>
-                <li>
-                  exemplo
-                </li>
-              </ul>
+
+
+
+
+
+
+
+
+
+
+            <!-- <div class="container">
+
+              <div class="col">
+                <img src="" id="imagem" class="img-fluid rounded-start img imagem" alt="...">
+                <h3 class="texto" id="titulo">Americano</h3>
+                <h5 class="valor">R$10,00</h5>
+  
+                <button class="oval-titlee btnn" onclick="addItemToCart('cafeamericanoquente')">
+                  <img src="./src/cart.png" class="carrovrum">
+                  <p>Adicionar ao carrinho</p>
+                </button>
+                
+                <a class="oval-titlee btnn BATATA" href="cardapio.html">
+                  <p >Voltar ao menu</p>
+                </a>
+              </div>
+
+
+              
+              <div class="detalhes col">
+                <div class="oval-titleee" id="detalhes">
+                  <ul>
+                    <h4>Ingredientes:</h4>  
+                    <br>
+                    <li>
+                      exemplo
+                    </li>
+                    <li>
+                      exemplo
+                    </li>
+                    <li>
+                      exemplo
+                    </li>
+                    <li>
+                      exemplo
+                    </li>
+                    <br>
+                    <h4>Observação:</h4>
+                    <li>
+                      exemplo
+                    </li>
+                  </ul>
+    
+                </div>
+              </div> -->
+
 
             </div>
-          </div>
-      </div>
-        </div>
-
-
 
 
       </main>
 
-      <footer class="footer"><img src="./src/footer.png" alt="Logo" class="logo-footer"></footer>
+      <footer class="footer position-fixed"><img src="./src/footer.png" alt="Logo" class="logo-footer"></footer>
       <script src="./js/default.js"></script>
       <script src="./js/detalhes.js"></script>
 </body>

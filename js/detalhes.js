@@ -2,6 +2,7 @@ let url = window.location.href;
 let img = document.getElementById('imagem');
 let titulo = document.getElementById('titulo');
 let detalhes = document.getElementById('detalhes');
+let btnAdd = document.getElementById('adicionarNoCarrinho');
 
 // EXTRAI DO INTERROGA PRA FRENTE
 var queryString = url.split('?')[1];
@@ -19,13 +20,17 @@ if (queryString) {
 
     paramObj[key] = value;
   }
-
+  
   console.log(paramObj);
   img.src = `./src/${paramObj.imagem}.png`
   titulo.innerText = reWriteName(paramObj.imagem);
+  btnAdd.onclick = function() {
+    // Sua função aqui
+    addItemToCart(paramObj.imagem);
+  }; 
   detalhes.innerHTML = `
   <ul>
-    <h4>Ingredientes:</h4>  
+    <h2>Ingredientes:</h2>  
     <br>
     <li>
         ${paramObj.ingrediente1}
@@ -40,7 +45,8 @@ if (queryString) {
         ${paramObj.ingrediente4}
     </li>
     <br>
-    <h4>Observação:</h4>
+    <h2>Observação:</h2>
+    <br>
     <li>
     ${paramObj.observacao}
     </li>
@@ -88,6 +94,24 @@ function reWriteName(nomeOriginal) {
         return 'Descafeinado Gelado';
       case 'cafementagelado':
         return 'Menta Gelado';
+      case 'fatiamorango':
+        return 'Fatia de Morango';
+      case 'pastelcarne':
+        return 'Pastel de Carne';
+      case 'cupcake':
+        return 'Cupcake';
+      case 'fatiabrigadeiro':
+        return 'Fatia de Brigadeiro';
+      case 'bolodefuba':
+        return 'Bolo de Fubá';
+      case 'croissant':
+        return 'Croissant';
+      case 'fatiapalmito':
+        return 'Fatia de Palmito';
+      case 'donutschoco':
+        return 'Donuts chocolate';
+      case 'bolodecenoura':
+        return 'Bolo de Cenoura';
       default:
         return nomeOriginal;
     }
