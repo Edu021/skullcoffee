@@ -20,7 +20,7 @@
     <nav class="navbar">
         <div class="container-fluid">
           
-          <a class="navbar-brand mx-auto fw-bold text-light" href="#">SKULL COFFEE</a>
+          <a class="navbar-brand mx-auto fw-bold text-light" href="./home.html">SKULL COFFEE</a>
           <div class="oval"></div>
           <img src="/src/user_icon.png" onclick="account()" alt="Logo" class="logo-user">
 
@@ -39,6 +39,20 @@
                 <img class="mb-4" src="src/carrinhogrande.png">
                 <h1 class="text-light">SEU CARRINHO</h1>
             </div>
+
+            <div class="toast-container position-fixed bottom-0 end-0 p-3">
+              <div id="liveToast" class="toast text-bg-success" role="alert" aria-live="assertive" aria-atomic="true">
+                <div class="toast-header ">
+                  <img src="./src/footer.png" class="rounded me-2" height="70px">
+                  <strong class="me-auto">Skull Coffee</strong>
+                  <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                </div>
+                <div class="toast-body text-bg-success">
+                  Compra finalizada com sucesso
+                </div>
+              </div>
+            </div>
+
             <div class="row">
             
                 <div class="col">
@@ -60,7 +74,7 @@
 
                         </div>
 
-                        <button class="btn mt-3 mb-4 text-light">Finalizar Compra</button>
+                        <button class="btn mt-3 mb-4 text-light" id="liveToastBtn" onclick="finalizar()">Finalizar Compra</button>
                     </div>
                 </div>
             </div>

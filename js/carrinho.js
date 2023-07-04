@@ -1,5 +1,11 @@
-
-
+const toastTrigger = document.getElementById('liveToastBtn')
+const toastLiveExample = document.getElementById('liveToast')
+if (toastTrigger) {
+  const toastBootstrap = bootstrap.Toast.getOrCreateInstance(toastLiveExample)
+  toastTrigger.addEventListener('click', () => {
+    toastBootstrap.show()
+  })
+}
 window.onload = function() {
   let cartBadge = document.getElementById("carrinho");
   if(localStorage.getItem("cart")) {
@@ -80,6 +86,14 @@ function refresh(id, amount) {
   }
   
   
+}
+
+function finalizar() {
+  // LIMPA O CARRINHO
+  localStorage.clear();
+  
+
+
 }
 
 function reWriteName(nomeOriginal) {
