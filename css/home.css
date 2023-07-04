@@ -1,0 +1,91 @@
+.caveiras {
+    background-image: url("../src/caveiras.png");
+    position: absolute;
+
+    width: 1441px;
+    height: 946px;
+    flex-shrink: 0;
+    text-shadow: 3px 3.95556px 3.95556px rgba(0, 0, 0, 0.7);
+}
+
+.logo{
+    position: relative;
+    top: 50px;
+    display: block;
+    margin: 0px auto;
+    width: 300px;
+    height: 300px;
+
+}
+
+.cinza {
+    background-image: url("../src/qporraehessa.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 2402px;
+    width: 1048px;
+    position: relative;   
+
+}
+
+.login {
+    width: 515px;
+    height: 576px;
+    flex-shrink: 0;
+    border-radius: 88px;
+    background-color: #897362;
+    box-shadow: 10px 10px 4px 0px rgba(0, 0, 0, 0.25);
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.bola_cinza {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 129.18px;
+    height: 134px;
+    flex-shrink: 0;
+    border-radius: 134px;
+    background-color: #65605B;
+    box-shadow: 10px 10px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.bola_cinza_menor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 66px;
+    height: 59px;
+    flex-shrink: 0;
+    border-radius: 134px;
+    background-color: #65605B;
+
+}
+
+.inputs {
+    width: 432px;
+    height: 81px;
+    flex-shrink: 0;
+    border-radius: 30px;
+    
+    background: white;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.botao_login {
+    width: 232px;
+    height: 72px;
+    flex-shrink: 0;
+    color: #1E1E1E;
+    text-shadow: 3px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    font-size: 40px;
+    font-family: Spectral;
+}
